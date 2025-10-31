@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Git Practice</title>
-  <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-  <h1>Hello, GitHub!</h1>
-  <button onclick="showMessage()">Click Me</button>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">MyPortfolio</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Oum Rao</span> 👋</h1>
+      <p>A passionate web developer building cool things on the web.</p>
+      <button onclick="scrollToContact()">Hire Me</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I love creating modern, user-friendly websites that bring ideas to life.
+      I'm currently learning Git, GitHub, and JavaScript to improve my skills.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>💻 Portfolio Website</h3>
+        <p>A personal website showcasing my skills and creativity.</p>
+      </div>
+      <div class="card">
+        <h3>🍔 Restaurant Menu</h3>
+        <p>A responsive digital menu design for a restaurant.</p>
+      </div>
+      <div class="card">
+        <h3>🎮 Game Design</h3>
+        <p>A fun mini-game built using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project or idea? Let's connect!</p>
+    <form onsubmit="return showMessage()">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Oum Rao. Built with 💙 and GitHub Pages.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+function scrollToContact() {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+
 function showMessage() {
-  alert("You clicked the button!");
+  alert("Thanks for reaching out! I’ll get back to you soon 😊");
+  return false; 
 }
